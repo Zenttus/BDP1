@@ -13,8 +13,11 @@ import org.json.simple.parser.JSONParser;
 import org.json.*;
 
 import java.io.IOException;
+import java.util.StringTokenizer;
 
 public class TweetsMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
+
+    private Text word = new Text();
 
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
@@ -25,8 +28,11 @@ public class TweetsMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
         try {
             for(int i=0; i<tuple.length; i++){
                 JSONObject obj = (JSONObject) parser.parse(tuple[i]);
-                tweetText = obj.get("text").toString();
-                context.write(new Text(tweetText), new IntWritable(1));
+                StringTokenizer itr = new StringTokenizer(obj.get("text").toString());
+                while(itr.hasMoreTokens()){
+                    word.set(itr.nextToken());
+                    context.write(word, new IntWritable(1));
+                }
             }
         }catch(Exception e){
             System.out.println("BOOM");
