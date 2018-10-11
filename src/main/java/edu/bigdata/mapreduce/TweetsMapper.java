@@ -11,7 +11,10 @@ public class TweetsMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
 
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-    //TODO: format values
+        //TODO clean tweetData
+        //TODO word detector
+
+        context.write(new Text(), new IntWritable(1));
     }
 
 }
