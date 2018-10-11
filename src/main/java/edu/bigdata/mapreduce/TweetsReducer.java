@@ -13,9 +13,12 @@ public class TweetsReducer extends Reducer<Text, IntWritable, Text, IntWritable>
         int total = 0;
 
         for(IntWritable value: values){
+
             total++;
         }
 
         context.write(key, new IntWritable(total));
     }
+
+
 }
