@@ -13,7 +13,12 @@ public class FileReader {
 
     public static void main(String[] args){
 
-        String fileName = "";
+        if(args.length < 1){
+            System.err.println("Falta un argument");
+            System.exit(0);
+        }
+
+        String fileName = args[0];
         URI fileUri = URI.create(fileName);
 
         Configuration conf = new Configuration();
