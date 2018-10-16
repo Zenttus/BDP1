@@ -18,7 +18,7 @@ public class Main {
         }
 
         Job job = new Job();
-        job.setJarByClass(edu.bigdata.mapreduce.TweetsCounter.class);
+        job.setJarByClass(mapreduce.screenname.Main.class);
         job.setJobName("Screen Name Counter");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
