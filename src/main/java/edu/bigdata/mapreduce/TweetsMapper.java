@@ -24,7 +24,8 @@ public class TweetsMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
             "each few for from further had has have having her here hers herself him himself his how I if in into is it " +
             "its itself let me more most my myself nor of on once only or other ought our ours ourselves out over own " +
             "same she should so some such than that the their them themselves then there these they this those " +
-            "through to too under until up very was we were what when where which while who whom why with would you"
+            "through to too under until up very was we were what when where which while who whom why with would you " +
+            "http "
             ;
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {

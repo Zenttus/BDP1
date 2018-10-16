@@ -1,5 +1,7 @@
-package edu.bigdata.mapreduce;
+package mapreduce.screenname;
 
+import edu.bigdata.mapreduce.TweetsMapper;
+import edu.bigdata.mapreduce.TweetsReducer;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -7,7 +9,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class TweetsCounter {
+public class Main {
 
     public static void main(String[] args) throws Exception{
         if(args.length != 2){
@@ -16,14 +18,14 @@ public class TweetsCounter {
         }
 
         Job job = new Job();
-        job.setJarByClass(TweetsCounter.class);
-        job.setJobName("Word Counter");
+        job.setJarByClass(edu.bigdata.mapreduce.TweetsCounter.class);
+        job.setJobName("Screen Name Counter");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(TweetsMapper.class);
-        job.setReducerClass(TweetsReducer.class);
+        job.setMapperClass(ScreenNameMapper.class);
+        job.setReducerClass(ScreenNameReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
