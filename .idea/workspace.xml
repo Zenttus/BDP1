@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="208ec6e9-8afb-4164-bd44-5ab96d953116" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/screenname/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/screenname/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/words/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/words/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/words/WordsMapper2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/words/WordsMapper2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,13 +47,13 @@
         <counts>
           <entry key="MF" value="32" />
           <entry key="dummy" value="10" />
-          <entry key="java" value="4333" />
+          <entry key="java" value="4340" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4333" />
+          <entry key="JAVA" value="4340" />
           <entry key="Manifest" value="32" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="13" />
@@ -64,7 +63,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/words/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -76,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/words/WordsMapper2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="24" column="96" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,9 +165,9 @@
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/words/WordsReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/words/WordsReducer2.java" />
         <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/src/main/java/mapreduce/words/WordsMapper2.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/screenname/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/words/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapreduce/words/WordsMapper2.java" />
       </list>
     </option>
   </component>
@@ -268,7 +267,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539772135350" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539772753694" />
     <property name="last_opened_file_path" value="C:/Hadoop-2.8.0/share/hadoop/common/lib" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -360,9 +359,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49777117" weight="0.3299748" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4962853" weight="0.3299748" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5283154" side_tool="true" visible="true" weight="0.3254364" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.52903223" side_tool="true" visible="true" weight="0.3254364" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.47168458" visible="true" weight="0.3254364" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.47096774" visible="true" weight="0.3254364" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -511,30 +510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/words/WordsReducer2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/words/WordsMapper2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,6 +531,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="36" column="60" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/words/WordsReducer2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/words/WordsMapper2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="96" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

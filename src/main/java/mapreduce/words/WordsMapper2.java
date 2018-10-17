@@ -22,7 +22,7 @@ public class WordsMapper2 extends Mapper<LongWritable, Text, Text, IntWritable>{
         System.out.println(value);
         String[] tuple = value.toString().split("\\n");
         for(String line : tuple){
-            context.write(new Text("Total"), new IntWritable(Integer.parseInt(line)) );
+            context.write(new Text("Total"), new IntWritable(Integer.parseInt(line.split(" ")[1])) );
         }
     }
 
