@@ -1,0 +1,327 @@
+{
+  "in_reply_to_screen_name": null,
+  "is_quote_status": false,
+  "place": null,
+  "coordinates": null,
+  "favorite_count": 0,
+  "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  "quote_count": 0,
+  "reply_count": 0,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_status_id": null,
+  "user": {
+    "follow_request_sent": null,
+    "listed_count": 4,
+    "followers_count": 432,
+    "name": "BelleMa",
+    "favourites_count": 21,
+    "description": "BelleMa is driven with a passion to enhance a mothers’ breastfeeding experience and a desire to educate mothers that nutrition starts from infancy.",
+    "profile_text_color": "000000",
+    "default_profile_image": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/795791360884240386/LSC2MYf7_normal.jpg",
+    "profile_link_color": "7FDBB6",
+    "translator_type": "none",
+    "verified": false,
+    "profile_background_tile": false,
+    "profile_sidebar_border_color": "000000",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "url": "http://www.bellemausa.com",
+    "profile_use_background_image": false,
+    "location": "Los Angeles, CA",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/3169269090/1478568643",
+    "contributors_enabled": false,
+    "default_profile": false,
+    "statuses_count": 199,
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/795791360884240386/LSC2MYf7_normal.jpg",
+    "protected": false,
+    "friends_count": 44,
+    "id_str": "3169269090",
+    "screen_name": "BellemaUSA",
+    "lang": "en",
+    "notifications": null,
+    "id": 3169269090,
+    "geo_enabled": false,
+    "profile_background_color": "000000",
+    "profile_sidebar_fill_color": "000000",
+    "following": null,
+    "time_zone": "Pacific Time (US & Canada)",
+    "created_at": "Thu Apr 23 23:36:01 +0000 2015",
+    "utc_offset": -25200,
+    "is_translator": false,
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png"
+  },
+  "favorited": false,
+  "entities": {
+    "symbols": [],
+    "user_mentions": [],
+    "hashtags": [
+      {
+        "text": "normalizebrestfeeding",
+        "indices": [
+          87,
+          109
+        ]
+      },
+      {
+        "text": "mom",
+        "indices": [
+          110,
+          114
+        ]
+      }
+    ],
+    "urls": [
+      {
+        "url": "https://t.co/QeP6HJg7zI",
+        "indices": [
+          62,
+          85
+        ],
+        "display_url": "facebook.com/BelleMaUSA/pho…",
+        "expanded_url": "https://www.facebook.com/BelleMaUSA/photos/a.411157599067101.1073741829.411130032403191/894916700691186/?type=3&theater"
+      },
+      {
+        "url": "https://t.co/fSGeVAUWUO",
+        "indices": [
+          116,
+          139
+        ],
+        "display_url": "twitter.com/i/web/status/9…",
+        "expanded_url": "https://twitter.com/i/web/status/976246293486972928"
+      }
+    ]
+  },
+  "timestamp_ms": "1521590228803",
+  "id": 976246293486972928,
+  "contributors": null,
+  "display_text_range": [
+    0,
+    140
+  ],
+  "possibly_sensitive": false,
+  "extended_tweet": {
+    "full_text": "What's the Recommended Schedule for Getting the Flu Vaccine?\n\nhttps://t.co/QeP6HJg7zI\n\n#normalizebrestfeeding #mom #momtobe #mother #motherhood #newmom #baby #newborn #parenting #parents #breastpump #knowledge #tips #lactafion #lactafingmom #infant https://t.co/zoXxrtVbJ9",
+    "display_text_range": [
+      0,
+      248
+    ],
+    "extended_entities": {
+      "media": [
+        {
+          "id": 976246257973788672,
+          "media_url": "http://pbs.twimg.com/media/DYxSzJvVAAAoJ1z.jpg",
+          "url": "https://t.co/zoXxrtVbJ9",
+          "expanded_url": "https://twitter.com/BellemaUSA/status/976246293486972928/photo/1",
+          "id_str": "976246257973788672",
+          "display_url": "pic.twitter.com/zoXxrtVbJ9",
+          "indices": [
+            249,
+            272
+          ],
+          "type": "photo",
+          "media_url_https": "https://pbs.twimg.com/media/DYxSzJvVAAAoJ1z.jpg",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 2000,
+              "h": 2000,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 1200,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 680,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "entities": {
+      "symbols": [],
+      "media": [
+        {
+          "id": 976246257973788672,
+          "media_url": "http://pbs.twimg.com/media/DYxSzJvVAAAoJ1z.jpg",
+          "url": "https://t.co/zoXxrtVbJ9",
+          "expanded_url": "https://twitter.com/BellemaUSA/status/976246293486972928/photo/1",
+          "id_str": "976246257973788672",
+          "display_url": "pic.twitter.com/zoXxrtVbJ9",
+          "indices": [
+            249,
+            272
+          ],
+          "type": "photo",
+          "media_url_https": "https://pbs.twimg.com/media/DYxSzJvVAAAoJ1z.jpg",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 2000,
+              "h": 2000,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 1200,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 680,
+              "resize": "fit"
+            }
+          }
+        }
+      ],
+      "user_mentions": [],
+      "hashtags": [
+        {
+          "text": "normalizebrestfeeding",
+          "indices": [
+            87,
+            109
+          ]
+        },
+        {
+          "text": "mom",
+          "indices": [
+            110,
+            114
+          ]
+        },
+        {
+          "text": "momtobe",
+          "indices": [
+            115,
+            123
+          ]
+        },
+        {
+          "text": "mother",
+          "indices": [
+            124,
+            131
+          ]
+        },
+        {
+          "text": "motherhood",
+          "indices": [
+            132,
+            143
+          ]
+        },
+        {
+          "text": "newmom",
+          "indices": [
+            144,
+            151
+          ]
+        },
+        {
+          "text": "baby",
+          "indices": [
+            152,
+            157
+          ]
+        },
+        {
+          "text": "newborn",
+          "indices": [
+            158,
+            166
+          ]
+        },
+        {
+          "text": "parenting",
+          "indices": [
+            167,
+            177
+          ]
+        },
+        {
+          "text": "parents",
+          "indices": [
+            178,
+            186
+          ]
+        },
+        {
+          "text": "breastpump",
+          "indices": [
+            187,
+            198
+          ]
+        },
+        {
+          "text": "knowledge",
+          "indices": [
+            199,
+            209
+          ]
+        },
+        {
+          "text": "tips",
+          "indices": [
+            210,
+            215
+          ]
+        },
+        {
+          "text": "lactafion",
+          "indices": [
+            216,
+            226
+          ]
+        },
+        {
+          "text": "lactafingmom",
+          "indices": [
+            227,
+            240
+          ]
+        },
+        {
+          "text": "infant",
+          "indices": [
+            241,
+            248
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://t.co/QeP6HJg7zI",
+          "indices": [
+            62,
+            85
+          ],
+          "display_url": "facebook.com/BelleMaUSA/pho…",
+          "expanded_url": "https://www.facebook.com/BelleMaUSA/photos/a.411157599067101.1073741829.411130032403191/894916700691186/?type=3&theater"
+        }
+      ]
+    }
+  },
+  "truncated": true,
+  "id_str": "976246293486972928",
+  "retweeted": false,
+  "retweet_count": 0,
+  "lang": "en",
+  "in_reply_to_user_id": null,
+  "created_at": "Tue Mar 20 23:57:08 +0000 2018",
+  "geo": null,
+  "in_reply_to_status_id_str": null,
+  "text": "What's the Recommended Schedule for Getting the Flu Vaccine?\n\nhttps://t.co/QeP6HJg7zI\n\n#normalizebrestfeeding #mom… https://t.co/fSGeVAUWUO",
+  "filter_level": "low"
+}
