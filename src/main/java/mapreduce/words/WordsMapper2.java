@@ -14,12 +14,17 @@ import org.json.*;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class WordsMapper2 extends Mapper<LongWritable, Text, Text, IntWritable>{
 
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        context.write(new Text("Total"), new IntWritable(Integer.parseInt(value.toString())) );
+        Pattern p = Pattern.compile("\\+\\d$");
+        Matcher m = p.matcher(value.toString());
+        m.find();
+        context.write(new Text("Total"), new IntWritable(Integer.parseInt(m.group())) );
     }
 
 }
