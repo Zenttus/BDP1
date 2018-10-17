@@ -39,7 +39,7 @@ public class WordsMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
                 StringTokenizer itr = new StringTokenizer(obj.get("text").toString());
                 while(itr.hasMoreTokens()){
                     word.set(itr.nextToken());
-                    for(String stopWord : stopWords.split(" ")){
+                    for(String stopWord : stopWords.split("\\s")){
                         if(word.toString().contains(stopWord)) {
                             needToSkip = true;
                             break;

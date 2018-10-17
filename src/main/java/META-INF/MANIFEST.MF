@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: mapreduce.getTotalKeys.Main
+Main-Class: mapreduce.words.Main
 
