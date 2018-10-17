@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception{
         if(args.length != 2){
-            System.err.println("Te faltan args(input path y output path).");
+            System.err.println("Missing args: arg1=InputPath, arg2=OutputPath");
 
             System.exit(-1);
         }

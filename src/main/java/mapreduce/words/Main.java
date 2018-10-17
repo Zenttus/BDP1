@@ -12,7 +12,6 @@ public class Main {
     public static void main(String[] args) throws Exception{
         if(args.length != 2){
             System.err.println("Missing args: arg1=InputPath, arg2=OutputPath");
-            //TODO fix error mss
             System.exit(-1);
         }
 
