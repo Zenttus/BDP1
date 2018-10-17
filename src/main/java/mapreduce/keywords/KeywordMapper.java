@@ -22,7 +22,7 @@ public class KeywordMapper extends Mapper<LongWritable, Text, Text, IntWritable>
         String quantity = cols[1];
         for(String w : keyWords.split("\\s")){
              pattern = Pattern.compile(w);
-            if(pattern.matcher(word).find()){
+            if(pattern.matcher(value.toString()).find()){
                 context.write(new Text(word), new IntWritable(Integer.parseInt(quantity)) );
                 break;
             }
