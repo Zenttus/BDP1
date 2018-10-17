@@ -22,8 +22,8 @@ public class Main {
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(mapreduce.words.WordsMapper.class);
-        job.setReducerClass(mapreduce.words.WordsReducer.class);
+        job.setMapperClass(mapreduce.keywords.KeywordMapper.class);
+        job.setReducerClass(mapreduce.keywords.KeywordReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
