@@ -11,14 +11,13 @@ public class Main {
 
     public static void main(String[] args) throws Exception{
         if(args.length != 2){
-            System.err.println("Te faltan args(input path y output path).");
-
+            System.err.println("Missing args: arg1=InputPath, arg2=OutputPath");
             System.exit(-1);
         }
 
         Job job = new Job();
         job.setJarByClass(mapreduce.screenname.Main.class);
-        job.setJobName("Screen Name Counter");
+        job.setJobName("Total Values Counter");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
