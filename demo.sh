@@ -1,4 +1,4 @@
-echo "MAPREDUCE DEMO INITIATED..."
+echo "MAPREDUCE DEMO INITIATED...$0 $1"
 echo "Finding and counting words..."
 hadoop jar ./jars/words.jar mapreduce.words.Main $0 $1/words
 hadoop jar ./jars/getTotal.jar mapreduce.getTotal.Main $1/words/part-r-00001 $1/words/total
