@@ -10,7 +10,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class Main {
 
     public static void main(String[] args) throws Exception{
-        if(args.length != 3){
+        if(args.length != 2){
             System.err.println("Te faltan args(input path y output path).");
 
             System.exit(-1);
