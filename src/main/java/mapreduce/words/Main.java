@@ -1,7 +1,5 @@
 package mapreduce.words;
 
-import edu.bigdata.mapreduce.TweetsMapper;
-import edu.bigdata.mapreduce.TweetsReducer;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -12,25 +10,38 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class Main {
 
     public static void main(String[] args) throws Exception{
-        if(args.length != 2){
-            System.err.println("Te faltan args(input path y output path).");
+        if(args.length != 3){
+            System.err.println("Missing args(input path(1), words output path(2), total words output path(3)).");
             System.exit(-1);
         }
 
-        Job job = new Job();
-        job.setJarByClass(mapreduce.words.Main.class);
-        job.setJobName("Word Counter");
+        Job job1 = new Job();
+        job1.setJarByClass(mapreduce.words.Main.class);
+        job1.setJobName("Word Counter");
 
-        FileInputFormat.addInputPath(job, new Path(args[0]));
-        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        FileInputFormat.addInputPath(job1, new Path(args[0]));
+        FileOutputFormat.setOutputPath(job1, new Path(args[1]));
 
-        job.setMapperClass(TweetsMapper.class);
-        job.setReducerClass(TweetsReducer.class);
+        job1.setMapperClass(mapreduce.words.WordsMapper.class);
+        job1.setReducerClass(mapreduce.words.WordsReducer.class);
 
-        job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
+        job1.setOutputKeyClass(Text.class);
+        job1.setOutputValueClass(IntWritable.class);
 
-        System.exit(job.waitForCompletion(true)? 0:1);
+        Job job2 = new Job();
+        job2.setJarByClass(mapreduce.words.Main.class);
+        job2.setJobName("Total Word Counter");
+
+        FileInputFormat.addInputPath(job2, new Path(args[1]));
+        FileOutputFormat.setOutputPath(job2, new Path(args[2]));
+
+        job2.setMapperClass(mapreduce.words.WordsMapper2.class);
+        job2.setReducerClass(mapreduce.words.WordsReducer2.class);
+
+        job2.setOutputKeyClass(Text.class);
+        job2.setOutputValueClass(IntWritable.class);
+
+        System.exit(job2.waitForCompletion(true)? 0:1);
     }
 
 }
