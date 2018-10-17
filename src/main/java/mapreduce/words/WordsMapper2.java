@@ -19,9 +19,10 @@ public class WordsMapper2 extends Mapper<LongWritable, Text, Text, IntWritable>{
 
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        String[] tuple = value.toString().split(" ");
+        System.out.println(value);
+        String[] tuple = value.toString().split("\\n");
         for(String line : tuple){
-            context.write(new Text("Total"), new IntWritable(Integer.parseInt(tuple[1])) );
+            context.write(new Text("Total"), new IntWritable(Integer.parseInt(line)) );
         }
     }
 
