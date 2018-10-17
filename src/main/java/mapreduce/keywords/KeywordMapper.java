@@ -21,7 +21,6 @@ public class KeywordMapper extends Mapper<LongWritable, Text, Text, IntWritable>
 
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        boolean needToSkip = true;
 
         JSONParser parser = new JSONParser();
         String[] tuple = value.toString().split("\\n");
@@ -33,12 +32,8 @@ public class KeywordMapper extends Mapper<LongWritable, Text, Text, IntWritable>
                     word.set(itr.nextToken());
                     for(String stopWord : keyWords.split("\\s")){
                         if(word.toString().contains(stopWord)) {
-                            needToSkip = false;
-                            break;
+                            context.write(new Text(stopWord), new IntWritable(1));
                         }
-                    }
-                    if(!needToSkip) {
-                        context.write(word, new IntWritable(1));
                     }
                 }
             }
