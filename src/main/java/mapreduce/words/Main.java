@@ -10,8 +10,9 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class Main {
 
     public static void main(String[] args) throws Exception{
-        if(args.length != 3){
+        if(args.length != 4){
             System.err.println("Missing args(input path(1), words output path(2), total words output path(3)).");
+            //TODO fix error mss
             System.exit(-1);
         }
 
@@ -32,8 +33,8 @@ public class Main {
         job2.setJarByClass(mapreduce.words.Main.class);
         job2.setJobName("Total Word Counter");
 
-        FileInputFormat.addInputPath(job2, new Path(args[1]));
-        FileOutputFormat.setOutputPath(job2, new Path(args[2]));
+        FileInputFormat.addInputPath(job2, new Path(args[2]));
+        FileOutputFormat.setOutputPath(job2, new Path(args[3]));
 
         job2.setMapperClass(mapreduce.words.WordsMapper2.class);
         job2.setReducerClass(mapreduce.words.WordsReducer2.class);
