@@ -41,6 +41,7 @@ public class Main {
         job2.setOutputKeyClass(Text.class);
         job2.setOutputValueClass(IntWritable.class);
 
+        job1.waitForCompletion(true);
         System.exit(job2.waitForCompletion(true)? 0:1);
     }
 
