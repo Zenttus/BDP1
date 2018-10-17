@@ -12,12 +12,18 @@ Then download some tweets(in [this](https://github.com/Zenttus/BDP1/blob/master/
 hdfs dfs –mkdir –p /user/tweetsfolder
 hdfs dfs -put TWEETS_FILE /user/tweetsfolder
 ```
-You are now set to run the demo. Once the demo script is executed it will do a series of MapReduce, once it's done there will be a .... file with a visual representation of the data from the tweets.
+You are now set to run the demo. Once the demo script is executed it will do a series of MapReduce, once it's done there will be a .... file with a visual representation of the data from the tweets. Change permisions
 ```
+chmod +x demo.sh
 ./demo.sh HDFS_PATH_OF_TWEETS HDF_PATH_FOR_RESULTS
 ```
 The demo will not run correctly if there's already a folder in the hdfs for the output. After every run you can change the HDF_PATH_FOR_RESULTS or you can delete it with the following:
 ```
 hdfs dfs -rm -r HDF_PATH_FOR_RESULTS
 ```
+
+
+
+you can run idnigvkjdf
+this jar does that
 ## Visuals
