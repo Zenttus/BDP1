@@ -9,13 +9,17 @@ import java.io.FileReader;
 public class Main {
     public static void main(String args[]){
 
-        String csvFile = args[0];
-        String filePath = args[1];
-        String h1 = args[2];
-        String h2 = args[3];
-
-            try {
-                File file = new File(filePath);
+        String csvFile = args[1];
+        String filePath = args[2];
+        String h1 = args[3];
+        String h2 = args[4];
+        System.out.println(args[0]);
+        System.out.println(args[1]);
+        System.out.println(args[2]);
+        System.out.println(args[3]);
+        System.out.println(args[4]);
+        try {
+            File file = new File(filePath);
                 FileWriter fw = new FileWriter(file);
                 CSVWriter writer = new CSVWriter(fw);
                 BufferedReader br = new BufferedReader(new FileReader(csvFile));
