@@ -12,7 +12,7 @@ Then download some tweets(in [this](https://github.com/Zenttus/BDP1/blob/master/
 hdfs dfs –mkdir –p HDFS_PATH_OF_TWEETS
 hdfs dfs -put TWEETS_FILE HDFS_PATH_OF_TWEETS
 ```
-You are now set to run the demo. Once the demo script is executed it will do a series of MapReduce.
+You are now set to run the demo. Once the demo script is executed it will do a series of MapReduce. Once is done you can see the results on the HDF_PATH_FOR_RESULTS folder.
 ```
 chmod +x demo.sh
 ./demo.sh HDFS_PATH_OF_TWEETS HDF_PATH_FOR_RESULTS
@@ -22,6 +22,6 @@ Note: The demo will not run correctly if there's already a folder in the hdfs fo
 hdfs dfs -rm -r HDF_PATH_FOR_RESULTS
 ```
 ### Individual MapReduce
-In the folder /jars there's the jar files for each mapreduce in case that you want to test them separately.
+In the folder /jars you can find the jar files for each mapreduce in case that you want to test them separately.
 ## Visuals
 > Coming soon
