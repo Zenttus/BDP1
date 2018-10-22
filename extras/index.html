@@ -52,7 +52,7 @@
       .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.csv("https://raw.githubusercontent.com/Zenttus/BDP1/master/extras/data.tsv", function(error, data) {
+    d3.csv("https://raw.githubusercontent.com/Zenttus/BDP1/master/extras/data.csv?token=AQx9-PcMIEb1tjJhnzTUJMU7d7vzzZhoks5b1x69wA%3D%3D", function(error, data) {
 
       data.forEach(function(d) {
         d.date = parseDate(d.date);
