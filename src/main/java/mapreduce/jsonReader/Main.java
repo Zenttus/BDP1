@@ -24,6 +24,8 @@ public class Main {
         conf.set("keyValue",args[2]);
         if(args.length == 4){
             conf.set("secondKeyValue", args[3]);
+        }else{
+            conf.set("secondKeyValue", "");
         }
 
         Job job = new Job(conf);

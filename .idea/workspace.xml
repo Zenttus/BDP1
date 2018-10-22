@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="208ec6e9-8afb-4164-bd44-5ab96d953116" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/ScreenNameMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/ScreenNameMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,13 +54,13 @@
         <counts>
           <entry key="MF" value="53" />
           <entry key="dummy" value="18" />
-          <entry key="java" value="6456" />
+          <entry key="java" value="6478" />
           <entry key="xml" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6456" />
+          <entry key="JAVA" value="6478" />
           <entry key="Manifest" value="53" />
           <entry key="PLAIN_TEXT" value="18" />
           <entry key="XML" value="16" />
@@ -100,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="340">
+              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/ScreenNameMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+            <state relative-caret-position="306">
+              <caret line="29" column="52" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,10 +189,10 @@
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/keywords/KeywordMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/keywords/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/ScreenNameMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/Main.java" />
       </list>
     </option>
   </component>
@@ -300,7 +300,7 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="bdp1" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540234772220" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540235211150" />
     <property name="last_opened_file_path" value="C:/Hadoop-2.8.0/share/hadoop/common/lib" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -398,9 +398,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4967742" weight="0.32917705" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4962853" weight="0.3299748" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.54767025" side_tool="true" visible="true" weight="0.3254364" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5483871" side_tool="true" visible="true" weight="0.3254364" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.45232975" visible="true" weight="0.3254364" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.4516129" visible="true" weight="0.3254364" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -569,20 +569,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/ScreenNameMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="306">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/ScreenNameMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/jsonReader/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        <state relative-caret-position="340">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
