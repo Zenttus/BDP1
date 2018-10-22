@@ -27,7 +27,7 @@ public class ScreenNameMapper extends Mapper<LongWritable, Text, Text, IntWritab
         try {
             for(int i=0; i<tuple.length; i++){
                 JSONObject obj = (JSONObject) parser.parse(tuple[i]);
-                if(conf.get("secondKeyValue") == null){
+                if(conf.get("secondKeyValue").length() > 0){
                     word.set(((JSONObject) obj.get(keyword)).get(conf.get("secondKeyValue")).toString());
                 }else {
                     word.set(obj.get(keyword).toString());
