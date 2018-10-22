@@ -31,7 +31,7 @@ public class ScreenNameMapper extends Mapper<LongWritable, Text, Text, IntWritab
                     word.set(((JSONObject) obj.get(keyword)).get(conf.get("secondKeyValue")).toString());
                     context.write(word, new IntWritable(1));
                 }else {
-                    word.set(obj.get("text").toString());
+                    word.set(obj.get("id_str").toString());
                     context.write(word, new IntWritable(Integer.parseInt(obj.get(keyword).toString())));
                 }
             }
