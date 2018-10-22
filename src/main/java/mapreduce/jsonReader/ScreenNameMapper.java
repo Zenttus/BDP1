@@ -29,10 +29,11 @@ public class ScreenNameMapper extends Mapper<LongWritable, Text, Text, IntWritab
                 JSONObject obj = (JSONObject) parser.parse(tuple[i]);
                 if(conf.get("secondKeyValue").length() > 0){
                     word.set(((JSONObject) obj.get(keyword)).get(conf.get("secondKeyValue")).toString());
+                    context.write(word, new IntWritable(1));
                 }else {
-                    word.set(obj.get(keyword).toString());
+                    word.set(((JSONObject) obj.get("user")).get(conf.get("text")).toString());
+                    context.write(word, new IntWritable(Integer.parseInt(obj.get(keyword).toString())));
                 }
-                context.write(word, new IntWritable(1));
             }
         }catch(Exception e){
             System.out.println("BOOM");
