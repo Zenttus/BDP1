@@ -1,23 +1,33 @@
-package mapreduce.screenname;
+package mapreduce.jsonReader;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapred.JobConf;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
+import javax.security.auth.login.AppConfigurationEntry;
+import javax.security.auth.login.Configuration;
+
 public class Main {
 
     public static void main(String[] args) throws Exception{
-        if(args.length != 2){
-            System.err.println("Missing args: arg1=InputPath, arg2=OutputPath");
+        if(args.length < 3){
+            System.err.println("Missing args: arg1=InputPath, arg2=OutputPath, arg3=JsonField, arg4=JsonSubField(optional)");
 
             System.exit(-1);
         }
 
-        Job job = new Job();
-        job.setJarByClass(mapreduce.screenname.Main.class);
+        JobConf conf = new JobConf(Main.class);
+        conf.set("keyValue",args[2]);
+        if(args.length == 4){
+            conf.set("secondKeyValue", args[3]);
+        }
+
+        Job job = new Job(conf);
+        job.setJarByClass(mapreduce.jsonReader.Main.class);
         job.setJobName("Screen Name Counter");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));

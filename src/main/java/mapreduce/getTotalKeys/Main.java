@@ -17,7 +17,7 @@ public class Main {
         }
 
         Job job = new Job();
-        job.setJarByClass(mapreduce.screenname.Main.class);
+        job.setJarByClass(mapreduce.jsonReader.Main.class);
         job.setJobName("Total Keys Counter");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));

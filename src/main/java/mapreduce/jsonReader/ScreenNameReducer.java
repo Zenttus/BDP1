@@ -1,4 +1,4 @@
-package mapreduce.screenname;
+package mapreduce.jsonReader;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
