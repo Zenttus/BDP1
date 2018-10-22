@@ -21,7 +21,7 @@ public class ScreenNameMapper extends Mapper<LongWritable, Text, Text, IntWritab
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
         Configuration conf = context.getConfiguration();
-        String keyword = conf.get("keyword");
+        String keyword = conf.get("keyValue");
         JSONParser parser = new JSONParser();
         String[] tuple = value.toString().split("\\n");
         try {
