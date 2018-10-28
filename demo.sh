@@ -9,4 +9,10 @@ echo "DONE"
 echo "Finding screen Names..."
 hadoop jar ./jars/screenNames.jar mapreduce.screenname.Main $1 $2/screenNames
 hadoop jar ./jars/getTotalKeys.jar mapreduce.getTotalKeys.Main $2/screenNames/part-r-00001 $2/screenNames/total
+echo "DONE"
+echo "Finding retweets..."
+hadoop jar ./jars/jasonExtractor.jar mapreduce.jasonReader/Main $1 $2/retweets "retweet_count"
+echo "DONE"
+echo "Finding replies"
+
 echo "FINISHED"
